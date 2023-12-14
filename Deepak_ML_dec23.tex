@@ -1,0 +1,378 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingsub}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textbf{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    {\textbf{\Huge Nathan}} \\ \vspace{3pt} % Minimal vertical space
+    \small \faUser \hspace{.5pt} {Deepak Kasi Nathan}
+    $|$
+    \faMobile \hspace{.5pt} \href{tel:+18126069724}{\textcolor{blue}{+1 812 606 9724}}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:deepak.kasi.nathan.22@gmail.com}{\textcolor{blue}{deepak.kasi.nathan.22@gmail.com}}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://linkedin.com/in/deepak-kn}{\textcolor{blue}{LinkedIn}}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/kndeepak}{\textcolor{blue}{GitHub}}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/RSMW6Txb6bimZeei8}{\textcolor{blue}{Chicago}}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+\vspace{-17pt}
+\section{Education}
+\vspace{1pt}
+\resumeSubHeadingListStart
+
+\resumeEducationHeading
+  {Indiana University}{August 2021 -- May 2023}
+  {Master of Science in Computer Science}{Bloomington, Indiana}
+
+\resumeEducationHeading
+  {Anna University}{August 2013 -- May 2017}
+  {Bachelor of Electronics and Instrumentation Engineering}{Chennai, India}
+
+\resumeSubHeadingListEnd
+
+
+
+
+%----------- WORK EXPERIENCE -----------
+\vspace{-15pt}
+\section{Work Experience}
+\vspace{1pt}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Indiana University}{August 2021 -- Present}
+    {Research Assistant}{Indiana, United States}
+    \resumeItemListStart
+        \resumeItem{Developed a Composer Style Classification project, implemented a CNN to classify music based on composition style using 10K songs. Utilized Mel Frequency Cepstral Coefficients (MFCC) to capture essential features.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+        {Eagle Software - Madras Security Printers}{February 2021 -- July 2021}
+        {Machine Learning Engineer II}{Chennai, India}
+        \resumeItemListStart
+            \resumeItem{Managed \& worked with team for analysis (behavioral \& demographic) for national identification system ;build anomaly detection to reduce fake registration by 23 \% to prevent fraudulent identities in the system }
+            
+        \resumeItemListEnd
+        
+    % Add negative vertical space here if necessary
+    \vspace{-3pt}
+\vspace{-\baselineskip} % Adjust the negative space as needed
+\resumeSubheadingsub
+        {}{}
+        {Machine Learning Engineer}{January 2020 - January 2021}
+        \resumeItemListStart
+            \resumeItem{
+                Led the development and implementation of a machine learning-based image recognition for counterfeit detection, reducing counterfeit incidents by 30 percent. Pioneered predictive models to analyze transaction data for internal theft prevention, achieving a 25\% reduction in losses \& theft.
+            }
+            \resumeItem{
+                Spearheaded the creation of a TensorFlow \& FastAPI based Backend API for Genuine Label Detection in a mobile app, achieved a 95\% recall rate \& the false positive rate near 1\%.
+            }
+            \resumeItem{
+                Leveraged GCP Functions to build image pipeline , automated deployments via CI/CD pipeline , and with Heroku platform management, did resource optimization and auto-scaling to bring down overhead by 50\%.
+            }
+        \resumeItemListEnd
+
+
+
+  \resumeSubheading
+  {Cema Automations}{June 2017 -- December 2019}
+  {Software Developer - Data Science }{Chennai, India}
+  \resumeItemListStart
+      \resumeItem{Performed statistical analysis and developed machine learning models for control systems, achieving a 15\% reduction in energy costs and an 8\% improvement in operational efficiency.}
+      \resumeItem{Built over 20 interactive dashboards using Tableau for the energy sector, enabling real-time monitoring and data-driven decisions, leading to a 1.2x increase in annual profits.}
+      \resumeItem{Integrated machine learning insights with plant control strategies, significantly enhancing decision-making, and doubling (2x) planning satisfaction among clients.}
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+
+
+
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+% \section{Awards \& Achievements}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \small{\item{
+        % \textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University. (Jul 2023)} \\ \vspace{3pt}
+
+        % \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to undergraduate students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK). (Dec 2021 \textbf{--} Jun 2022)} \\ \vspace{3pt}
+    
+        % \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)} \\ \vspace{3pt}
+        
+        % \textbf{KYK Outstanding Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK). (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
+        
+        % \textbf{Boğaziçi University Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University. (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
+        
+        % \textbf{Duolingo English Test (DET):}{ Overall Score: 135/160} \\ \vspace{3pt}
+        
+        % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
+        
+        % \textbf{Kocaeli Science High School Salutatorian Award:}{ Graduated as the second-highest ranked student in my class.}
+    % }}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- PROJECTS -----------
+\vspace{-15pt}
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Time Series Forecasting of Covid-19} $|$ \emph{[Python, Demand Forecasting]}}{Decmeber 2021}
+      \resumeItemListStart
+        \resumeItem{Implemented Time series forecasting using ARIMA, SARIMA, FB Prophet, and UCM models for Covid-19 cases, achieving
+a best MAPE score of 20\% with help of both univariate and multivariate modelling for accurate predictions.}
+      \resumeItemListEnd
+    \vspace{-5pt} % Reduced space
+
+    \resumeProjectHeading
+      {\textbf{Automatic Question Generation Using Deep Learning} $|$ \emph{[Python, BERT]}}{April 2022}
+      \resumeItemListStart
+        \resumeItem{Developed a deep learning solution for automatic question generation by translating German text to English, summarizing it with transformers, and generating multiple-choice questions using BERT and word-to-vector models.}
+      \resumeItemListEnd
+    \vspace{-5pt} % Reduced space
+
+    \resumeProjectHeading
+      {\textbf{Income Level Prediction Using BigQuery and PySpark} $|$ \emph{[Python, PySpark,Google BigQuery]}}{November 2022}
+      \resumeItemListStart
+        \resumeItem{Conducted data cleaning and exploration of census data using BigQuery and built machine learning models with PySpark to accurately predict income brackets.}
+      \resumeItemListEnd
+    \vspace{-5pt} % Reduced space
+
+    \resumeProjectHeading
+      {\textbf{Game Day Attendance Prediction} $|$ \emph{[Dython, Streamlit, XGBoost, SHAP]}}{May 2023}
+      \resumeItemListStart
+        \resumeItem{Predicted Colts game day attendance with ensemble techniques and Dython feature selection \& built Streamlit dashboard.Obtained Strategic business insights and recommendations to enhance revenue and fans experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%----------- TECHNICAL SKILLS -----------
+\vspace{-15pt}
+\section{Technical Skills}
+  \vspace{-3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Languages:} Python (Pandas, NumPy, Scikit-learn, NLTK, PyTorch, TensorFlow), JavaScript, SQL, NoSQL, MySQL \\
+        \textbf{Machine Learning:} Regression, Bagging, Boosting, Clustering, SVMs, Statistical Models,NLP, NMF , KNN, K-Means \\
+        \textbf{Deep Learning:} CNN, LSTM, Neural Networks, MFCC,Pytorch , TensorFlow(Keras),SciPy\\
+        \textbf{Cloud Tools:} AWS (SageMaker, EC2, Lambda), Google Cloud Functions (FaaS,Google Data Studio,Google BigQuery) \\
+        \textbf{MLOps/Management:} CI/CD (GitHub Actions), MLFlow/DVC, Git, Docker, A/B Testing ,Agile , REST\\
+        \textbf{Data Visualization:} Power BI, Matplotlib, Tableau, Microsoft Power BI, Excel \\
+        \textbf{Packages and Tools:} Scikit-learn, NLTK, statsmodels, Streamlit, Snowflake, PostgreSQL, Bigdata (PySpark), Streamlit \\
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- RELEVANT COURSEWORK -----------
+
+% \section{Relevant Coursework}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \small{\item{
+        % \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
+        
+        % \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
+    % }}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+\vspace{-17pt}
+\section{Certificates}
+  \resumeSubHeadingListStart
+    
+    \resumeOrganizationHeading
+      {Google Tensorflow Certified Developer}{Credential ID 26128552}{}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Swimming, Fitness, Eight-ball}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \item{References available upon request.}
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
